@@ -1,129 +1,511 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" class="ie" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" class="ie" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" class="ie" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 9]>
+<html id="ie9" class="ie" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if gt IE 9]>
+<html class="ie" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !IE]>
+<html dir="ltr" lang="en-US">
+<![endif]-->
 
+<!-- START HEAD -->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- style -->
-<link rel="stylesheet" href="css/test.css" />
-<link rel="stylesheet" href="css/formly.min.css" />
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-<!-- script -->
-<script type="text/javascript" src="js_lib/jquery-1.6.1.min.js"></script>
-<script type="text/javascript" src="js_lib/jquery.nivo.slider.pack.js"></script>
-<script src="./formly.min.js"></script>
-<script src="js/init.js"></script>
-<script type="text/javascript">
-$(window).load(function() {
-    $('#slider').nivoSlider();
-  $('#ContactInfo').formly();
-   });
 
-</script>
+    <meta charset="UTF-8"/>
+    <!-- this line will appear only if the website is visited with an iPad -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes"/>
 
-<title>Andware - Best Software For You</title>
+    <title>Andware</title>
+    <!--share-->
+    <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6688"></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+        document.getElementById("bdshell_js").src = "http://share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
+    </script>
+    <!-- CSSs -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/reset.css"/>
+    <!-- RESET STYLESHEET -->
+    <link rel="stylesheet" type="text/css" media="all" href="style.css"/>
+    <!-- MAIN THEME STYLESHEET -->
+    <link rel="stylesheet" id="max-width-1024-css" href="css/max-width-1024.css" type="text/css"
+          media="screen and (max-width: 1240px)"/>
+    <link rel="stylesheet" id="max-width-768-css" href="css/max-width-768.css" type="text/css"
+          media="screen and (max-width: 987px)"/>
+    <link rel="stylesheet" id="max-width-480-css" href="css/max-width-480.css" type="text/css"
+          media="screen and (max-width: 480px)"/>
+    <link rel="stylesheet" id="max-width-320-css" href="css/max-width-320.css" type="text/css"
+          media="screen and (max-width: 320px)"/>
 
-</head><body>
-<div></div>
-<div class="header1">
-<div class="header">
-<div class="logo"><img src='img/logo.png' alt="" /></div>
-<div class="navigation">
-<ul class="nav">
-<li ><a href="#"><br />
-主页</a></li>
-<li ><a href="./products/index.html"><br />
-产品</a></li>
-<li><a href="#" id="about"><br />
-关于</a></li>
-<li><a href="#" id="service"><br />
-服务</a></li>
-<li><a href="http://blog.andware.cn"><br />
-BLOG</a></li>
+    <!-- CSSs Plugin -->
+    <link rel="stylesheet" id="thickbox-css" href="css/thickbox.css" type="text/css" media="all"/>
+    <link rel="stylesheet" id="styles-minified-css" href="css/style-minifield.css" type="text/css" media="all"/>
+    <link rel="stylesheet" id="buttons" href="css/buttons.css" type="text/css" media="all"/>
+    <link rel="stylesheet" id="cache-custom-css" href="css/cache-custom.css" type="text/css" media="all"/>
+    <link rel="stylesheet" id="custom-css" href="css/custom.css" type="text/css" media="all"/>
 
-<li class="contacts"><a href="#" id="contacts"><br />
-联系我们</a></li></ul>
-</div></div>
+    <!-- FONTs -->
+    <link rel="stylesheet" id="google-fonts-css"
+          href="http://fonts.googleapis.com/css?family=Oswald%7CDroid+Sans%7CPlayfair+Display%7COpen+Sans+Condensed%3A300%7CRokkitt%7CShadows+Into+Light%7CAbel%7CDamion%7CMontez&amp;ver=3.4.2"
+          type="text/css" media="all"/>
+    <link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all'/>
 
-</div><div class="hi"></div><div class="sliderr1">
-<div class="sliderr">
+    <!-- JAVASCRIPTs -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/comment-reply.js"></script>
+    <script type="text/javascript" src="js/jquery.quicksand.js"></script>
+    <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.anythingslider.js"></script>
+    <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/jquery.aw-showcase.js"></script>
+    <script type="text/javascript" src="js/layerslider.kreaturamedia.jquery-min.js"></script>
+    <script type="text/javascript" src="js/shortcodes.js"></script>
+    <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="js/jquery.tweetable.js"></script>
 
 
-        <div class="slider-wrapper theme-default">
-            <div class="ribbon"></div>
-            <div id="slider" class="nivoSlider">
-                <volist name='sliderImage' id='vo'>
-                <img src='img/s_1.png' alt="" />
-                <img src='img/s_2.png' alt="" />
-                <img src='img/s_#.png' alt="" />
+</head>
+<!-- END HEAD -->
+
+<!-- START BODY -->
+<body class="no_js responsive stretched">
+
+<!-- START BG SHADOW -->
+<div class="bg-shadow">
+
+<!-- START WRAPPER -->
+<div id="wrapper" class="group">
+
+<!-- START HEADER -->
+<div id="header" class="group">
+
+    <div class="group inner">
+
+        <!-- START LOGO -->
+        <div id="logo" class="group">
+            <a href="index.html" title="Pink Rio"><img src="images/logo.png" title="Pink Rio" alt="Pink Rio"/></a>
+        </div>
+        <!-- END LOGO -->
+
+        <div id="sidebar-header" class="group">
+            <div class="widget-first widget yit_text_quote">
+                <blockquote class="text-quote-quote">&#8220;人的志向通常和他们的能力成正比例。&#8221;</blockquote>
+                <cite class="text-quote-author">约翰逊</cite>
+            </div>
+        </div>
+        <div class="clearer"></div>
+
+        <hr/>
+
+        <!-- START MAIN NAVIGATION -->
+        <div class="menu classic">
+            <ul id="nav" class="menu">
+
+                <li>
+                    <a href="index.html">　主　　页 »</a>
+                </li>
+
+                <li>
+                    <a href="opus-android.html">产品简介 </a>
+                </li>
+
+                <li>
+                    <a href="apartment.html">部门简介 »</a>
+                </li>
+
+                <li>
+                    <a href="project-develop.html">项目开发 »</a>
+                </li>
+
+                <li>
+                    <a href="news-web.html">移动互联 »</a>
+                </li>
+
+                <li>
+                    <a href="members.html">主干成员 »</a>
+                </li>
+
+                <li>
+                    <a href="aboutus.html">关于我们 »</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">联系我们 »</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- END MAIN NAVIGATION -->
+        <div id="header-shadow"></div>
+        <div id="menu-shadow"></div>
+    </div>
+
+</div>
+<!-- END HEADER -->
+
+<!-- START SLIDER -->
+<div id="slider-layer-slider" class="slider layer-slider no-responsive">
+    <div class="shadowWrapper">
+        <div id="layerslider_1" style="margin: 0px auto; width: 100%; height: 437px; ">
+            <div class="ls-layer"
+                 style="background-image: url('images/slider-layer/bg.jpg');slidedirection: right; slidedelay: 4000; durationin: 1000; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">
+                <div class="inner ls-s3"
+                     style="position:absolute; left:50%; slidedirection : top; slideoutdirection : right; parallaxin : .45; parallaxout : .45; durationin : 600; durationout : 1500; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 2000; delayout : 0;">
+                    <img src="images/slider-layer/055.png" alt="sublayer"
+                         style="position: absolute; top: 50px; right: 30px; ; "/></div>
+                <div class="inner ls-s3"
+                     style="position:absolute; left:50%; slidedirection : right; slideoutdirection : right; parallaxin : .45; parallaxout : .45; durationin : 600; durationout : 1500; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 2600; delayout : 0;">
+                    <img src="images/slider-layer/064.png" alt="sublayer"
+                         style="position: absolute; top: 191px; right: 340px; ; "/></div>
+                <div class="inner ls-s3"
+                     style="position:absolute; left:50%; slidedirection : top; slideoutdirection : right; parallaxin : .45; parallaxout : .45; durationin : 1000; durationout : 1500; easingin : easeOutBounce; easingout : easeInOutQuint; delayin : 3200; delayout : 0;">
+                    <img src="images/slider-layer/074.png" alt="sublayer"
+                         style="position: absolute; top: 184px; right: 290px; ; "/></div>
+                <div class="inner ls-s8"
+                     style="position:absolute; left:50%; slidedirection : left; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeOutQuint; easingout : easeInOutQuint; delayin : 1100; delayout : 0;">
+                    <div style="position: absolute; top:297px; left: 30px;  ">
+                        <a href="opus-android.html"
+                           class="btn btn-xlarge  btn-mfast-3 ">进入产品展示</a></div>
+                </div>
+                <div class="inner ls-s6"
+                     style="position:absolute; left:50%; slidedirection : left; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeOutQuint; easingout : easeInOutQuint; delayin : 900; delayout : 0;">
+                    <div style="position: absolute; top:186px; left: 30px;  font-size: 13px; color: #4f4f4e; font-family: Droid Sans,sans-serif;">
+                        <p style="width:340px;">创新很重要，设计思维也很重要，创新从生活感受来，你要把创新做出来，需要技术力和管理力，也需要设计思维，
+                            还需要换位思考，还包括对消费者的细心观察，这样就有机会把产品做到让客户很感动！</p>
+                    </div>
+                </div>
+                <div class="inner ls-s4"
+                     style="position:absolute; left:50%; slidedirection : left; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeOutQuint; easingout : easeInOutQuint; delayin : 700; delayout : 0;">
+                    <h3 style="position: absolute; top:126px; left: 30px;  font-size: 30px; color: #c97e08; font-family:Rokkitt,Georgia,serif;">
+                        三合一的市场，更受市场青睐</h3>
+                </div>
+                <div class="inner ls-s1"
+                     style="position:absolute; left:50%; slidedirection : left; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeOutQuint; easingout : easeInOutQuint; delayin : 500; delayout : 0;">
+                    <h2 style="position: absolute; top:94px; left: 30px;  font-size: 30px; color: #2e2d2d; font-family: Rokkitt,Georgia,serif;">
+                        网站建设、Phone Pad移动应用开发</h2>
+                </div>
+            </div>
+            <div class="ls-layer"
+                 style="background-image: url('images/slider-layer/bg1.jpg');slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : right;  parallaxin : .45; parallaxout : .45; durationin : 5000; durationout : 1500; easingin : easeOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;">
+                    <img src="images/slider-layer/011.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -476px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : right; slideoutdirection : right; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeOutQuint; easingout : easeInOutQuint; delayin : 3000; delayout : 0;">
+                    <img src="images/slider-layer/12.png" alt="sublayer"
+                         style="position: absolute; top: 7px; left: -221px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 2200; delayout : 0;">
+                    <img src="images/slider-layer/09.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -446px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 2200; delayout : 0;">
+                    <img src="images/slider-layer/10.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -446px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : bottom; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 1800; delayout : 0;">
+                    <img src="images/slider-layer/041.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -446px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : bottom; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 1800; delayout : 0;">
+                    <img src="images/slider-layer/051.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -446px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 1400; delayout : 0;">
+                    <img src="images/slider-layer/071.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -446px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 1400; delayout : 0;">
+                    <img src="images/slider-layer/08.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -446px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : bottom; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 1000; delayout : 0;">
+                    <img src="images/slider-layer/021.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -446px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : bottom; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 1000; delayout : 0;">
+                    <img src="images/slider-layer/031.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -446px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top;  parallaxin : .45; parallaxout : .45; durationin : 1200; durationout : 1500; easingin : easeOutBounce; easingout : easeInOutQuint; delayin : 500; delayout : 0;">
+                    <img src="images/slider-layer/11.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -446px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : bottom; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 2600; delayout : 0;">
+                    <div style="position: absolute; top:324.00001525878906px; left: 108px;  ">
+                        <p style="width:340px; padding-right:470px;">　　...关于更多详细 <a href="apartment.html"
+                                                                                    style="color:#c97509;">点　击　进　入 ></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ls-layer"
+                 style="background-image: url('images/slider-layer/bg.png');slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : left; slideoutdirection : left; parallaxin : .45; parallaxout : .45; durationin : 1600; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 200; delayout : 0;">
+                    <img src="images/slider-layer/052.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -449px; "/></div>
+                <div class="inner ls-s3"
+                     style="position:absolute; left:50%; slidedirection : top; slideoutdirection : right; parallaxin : .45; parallaxout : .45; durationin : 1000; durationout : 1500; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 1400; delayout : 0;">
+                    <div style="position: absolute; top:90px; left: 573px;  font-size: 30px; color: #2e2d2d; font-family: Rokkitt,Georgia,serif;">
+                        移动互联的发展
+                    </div>
+                </div>
+                <div class="inner ls-s4"
+                     style="position:absolute; left:50%; slidedirection : right; slideoutdirection : right; parallaxin : .45; parallaxout : .45; durationin : 1000; durationout : 1500; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 2000; delayout : 0;">
+                    <div style="position: absolute; top:130px; left: 573px;  font-size: 20px; color: #c97e08; font-family:Rokkitt,Georgia,serif;">
+                        工作的理想，就是为了理想的工作。
+                    </div>
+                </div>
+                <div class="inner ls-s5"
+                     style="position:absolute; left:50%; slidedirection : fade; slideoutdirection : right; parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 3000; delayout : 0;">
+                    <div style="position: absolute; top:170px; left: 573px;  font-size: 13px; color: #4f4f4e; font-family: Droid Sans,sans-serif; line-height:20px;">
+                        <p style="width:340px;">具有创意和执行力的年轻团队，对移动
+                            互联网的热爱使他们走在了一起。
+                            他们将贯彻Andware认真、高品质和对细节追求的工作
+                            态度，为客户创造更多的移动互联网价值。 </p>
+                    </div>
+                </div>
+                <div class="inner ls-s6"
+                     style="position:absolute; left:50%; slidedirection : bottom; slideoutdirection : right; parallaxin : .45; parallaxout : .45; durationin : 2000; durationout : 1500; easingin : easeOutQuint; easingout : easeInOutQuint; delayin : 2800; delayout : 0;">
+                    <div style="position: absolute; top:265px; left: 573px;  ">
+                        <p><a href="news-web.html"
+                              class="btn btn-xlarge  btn-mfast-3 ">进入移动互联</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="ls-layer"
+                 style="background-image: url('images/slider-layer/bg2.jpg');slidedirection: right; slidedelay: 4000; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%;   parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;">
+                    <img src="images/slider-layer/091.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -443px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%;   parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;">
+                    <img src="images/slider-layer/101.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -443px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top;  parallaxin : .45; parallaxout : .45; durationin : 1000; durationout : 1500; easingin : easeOutBounce; easingout : easeInOutQuint; delayin : 2000; delayout : 0;">
+                    <img src="images/slider-layer/033.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -443px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top;  parallaxin : .45; parallaxout : .45; durationin : 1000; durationout : 1500; easingin : easeOutBounce; easingout : easeInOutQuint; delayin : 2000; delayout : 0;">
+                    <img src="images/slider-layer/043.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -443px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top;  parallaxin : .45; parallaxout : .45; durationin : 1000; durationout : 1500; easingin : easeOutBounce; easingout : easeInOutQuint; delayin : 2500; delayout : 0;">
+                    <img src="images/slider-layer/053.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -443px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top;  parallaxin : .45; parallaxout : .45; durationin : 1000; durationout : 1500; easingin : easeOutBounce; easingout : easeInOutQuint; delayin : 2500; delayout : 0;">
+                    <img src="images/slider-layer/062.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -443px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top;  parallaxin : .45; parallaxout : .45; durationin : 1000; durationout : 1500; easingin : easeOutBounce; easingout : easeInOutQuint; delayin : 3000; delayout : 0;">
+                    <img src="images/slider-layer/072.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -443px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top;  parallaxin : .45; parallaxout : .45; durationin : 1000; durationout : 1500; easingin : easeOutBounce; easingout : easeInOutQuint; delayin : 3000; delayout : 0;">
+                    <img src="images/slider-layer/081.png" alt="sublayer"
+                         style="position: absolute; top: 0px; left: -443px; "/></div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : bottom;  parallaxin : .45; parallaxout : .45; durationin : 2500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 2400; delayout : 0;">
+                    <div style="position: absolute; top:335px; left: 446px;  width:960px;"><a
+                            href="members.html"
+                            class="btn btn-xlarge  btn-mfast-3 ">进入团队主干</a></div>
+                </div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : bottom;  parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 900; delayout : 0;">
+                    <div style="position: absolute; top:106px; left: 30px;  width:960px; font-size: 20px; color: #c97e08; font-family:Rokkitt,Georgia,serif;">
+                        <div style="padding-left:410px;">召之即来、来之能战、战则必胜、永不言败</div>
+                    </div>
+                </div>
+                <div class="inner ls-s2"
+                     style="position:absolute; left:50%; slidedirection : top;  parallaxin : .45; parallaxout : .45; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 500; delayout : 0;">
+                    <div style="position: absolute; top:65px; left: 30px;  width:960px; font-size: 30px; color: #2e2d2d; font-family: Rokkitt,Georgia,serif;">
+                        <div style="padding-left:410px;">我们的团队为你喝彩！</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/slider-layer.js"></script>
+        <div class="shadow-left"></div>
+        <div class="shadow-right"></div>
+    </div>
+</div>
+<!-- END SLIDER -->
+<div class="mobile-slider">
+    <div class="slider fixed-image inner"><img src="images/slider-layer/layer-fixed.jpg" alt=""/></div>
+</div>
+
+<!-- START PRIMARY -->
+<div id="primary" class="sidebar-right">
+    <div class="inner group">
+        <!-- START CONTENT -->
+        <div id="content-home" class="content group">
+            <div class="hentry group">
+                <div class="section services">
+
+                    <h3 class="title">我们的产品</h3>
+
+                    <div class="related_project">
+                        <a title="" href="opus-android.html#web1" class="related_img">
+                            <img src="images/services/adv1-175x175.jpg" alt="网站案例" title="网站案例"/> </a>
+                        <h4><a href="opus-android.html#web1">网站建设</a></h4>
+
+                        <p>人们可以通过网站来发布自己想要公开的资讯，或者利用网站来提供相关的网络服务,获取自己需要的资讯或者享受网络服务。 [...]
+                    </div>
+
+                    <div class="related_project">
+                        <a title="" href="opus-android.html#android1" class="related_img">
+                            <img src="images/services/deisgn-175x175.jpg" alt="Android案例" title="Android案例"/> </a>
+                        <h4><a href="opus-android.html#android1">Android应用</a></h4>
+
+                        <p>开发的平台允许任何移动终端厂商加入到Android联盟中来。显著的开放性,最大的受益正是丰富的软件资源 [...]
+                    </div>
+
+                    <div class="related_project">
+                        <a title="" href="opus-android.html#ios1" class="related_img">
+                            <img src="images/services/WEB1-175x175.jpg" alt="IOS案例" title="IOS案例"/> </a>
+                        <h4><a href="opus-android.html#ios1">IOS应用</a></h4>
+
+                        <p>全球的企业都开始选用 iOS 设备，因为它具有企业专属功能和高度的安全性。为广大的用户群创造新的体验 [...]
+                    </div>
+
+                    <div class="related_project_last related_project">
+                        <a title="" href="opus-android.html#uii" class="related_img">
+                            <img src="images/services/foto-175x175.jpg" alt="UI设计案例" title="UI设计案例"/> </a>
+                        <h4><a href="opus-android.html#uii">UI设计</a></h4>
+
+                        <p>对软件的人机交互、操作逻辑、界面美观的整体设计，让软件变得有个性、有品味，操作变得舒适、简单、自由 [...]
+                    </div>
+
+                    <div class="clear"></div>
+
+                </div>
+            </div>
+            <!-- START COMMENTS -->
+            <div id="comments">
+            </div>
+            <!-- END COMMENTS -->
+        </div>
+        <!-- END CONTENT -->
+        <!-- START SIDEBAR -->
+        <div id="sidebar-home" class="sidebar group">
+            <div class="widget-first widget testimonial-widget">
+                <h3>移动、互联优势</h3>
+
+                <div class="testimonial-text">
+                    <ul>
+                        <li>
+                            <blockquote>
+                                <p>
+                                    智能机玩的就是个应用，虽然现在Android的应用还无法与苹果相竞争，但是随着Android的推广与普及，应用程序数在成数量级增长，Android应用在可预见的未来是有能力与苹果相竞争的。
+                                    而来自Android应用商店最大的优势是，不对应用程序进行严格的审查。在这一点上优于苹果。
+                                </p>
+                                <a href="news-android.html" class="more-link">[...]</a>
+
+                                <div class="name-testimonial"><a class="name-testimonial" href="news-android.html">Android优势 </a>
+                                </div>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>iOS系统的软件与硬件的整合度相当高，使其分化大大降低，在这方面要远胜于碎片化严重的Android。这样也增加了整个系统的稳定性，经常使用iPhone的朋友也能发现，手机很少出现死机、无响应的情况。</p>
+                                <a href="news-ios.html" class="more-link">[...]</a>
+
+                                <div class="name-testimonial"><a class="name-testimonial" href="news-ios.html">IOS优势</a></div>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>企业网站所面对的不再是“被动”的读者，而是有目地的“主动”客户。买主以及潜在的客户将透过网络主动的找到企业网站，要求他们所需要的服务。一个设计优秀的企业网站，将能满足使用者需求，甚至达到双向的沟通，这是一般传统媒体所做不到的。 </p>
+                                <a href="news-web.html" class="more-link">[...]</a>
+
+                                <div class="name-testimonial"><a class="name-testimonial" href="news-web.html">网站优势 </a></div>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>在人和机器的互动过程（Human Machine Interaction）中，有一个层面，即我们所说的界面（interface）。从心理学意义来分，界面可分为感觉（视觉、触觉、听觉等）和情感两个层次。用户界面设计是屏幕产品的重要组成部分。界面设计是一个复杂的有不同学科参与的工程，认知心理学、设计学、语言学</p>
+                                <a href="news-ui.html" class="more-link">[...]</a>
+
+                                <div class="name-testimonial"><a class="name-testimonial" href="news-ui.html">UI设计优势 </a></div>
+                            </blockquote>
+                        </li>
+                    </ul>
+                </div>
+                <script type="text/javascript" src="js/testimonials.js"></script>
             </div>
 
+            <div class="widget widget-icon-text group">
+                <img class="icon-img" src="images/news_icon/aboutus.png" alt=""/>
 
-    </div></div>
+                <h3>关于我们</h3>
 
+                <p>About Us <a href="aboutus.html"><strong>查看详情</strong></a></p>
+            </div>
 
-</div><div class="four1">
-<div class="four">
-<div class="success"><p class="text1">成功</p>
-  <p class="text2">预测业界趋势</p>
-  <p class="text2">大胆使用最先进的技术</p>
-  <p class="text2">打造崭新的商业模式</p>
-  
-  
-<p class="img"><a target="_blank" href=""><img src="img/10.png" alt="img" /></a></p></div>
-<div class="strong"><p class="text1">强大</p>
-  <p class="text2">凝聚一流人才</p>
-   <p class="text2">永不停息的自我超越</p>
-    <p class="text2">每个细节都近乎完美</p>
-<p class="img"><a target="_blank" href=""><img src="img/10.png" alt="img" /></a></p></div>
-<div class="stable"><p class="text1">稳定</p>
-  <p class="text2">精准的项目分析</p>
-  <p class="text2">严格的项目流程</p>
-  <p class="text2">可靠的后期维护</p>
-<p class="img"><a target="_blank" href=""><img src="img/10.png" alt="img" /></a></p></div>
-<div class="wise"><p class="text1">明智</p>
-  <p class="text2">长期WEB开发经验</p>
-  <p class="text2">多种低耦合应用框架</p>
-  <p class="text2">屡次获得移动APP奖项</p>
-<p class="img"><a target="_blank" href=""><img src="img/10.png" alt="img" /></a></p></div></div>
+            <div class="widget-last widget widget-icon-text group">
+                <img class="icon-img" src="images/news_icon/contactus.png" alt=""/>
 
-</div><div class="ask1">
-<div class="ask">
-<p class="text3">我们为您提供如下服务：</p>
-<hr width="950" size="3" color="#e1e2e4" /></div>
-<div class="hi1"></div></div>
+                <h3>联系我们</h3>
 
+                <p>Contact Us <a href="contact.html"><strong>查看详情</strong></a></p>
+            </div>
 
-
-<div class="main">
-<div class="one">
-<p><img src="img/ios.png" alt="img" /></p>
-<p class="text12"><span class="text13">01.</span>移动APP开发</p>
-<p class="text15"><span class="text14">APP创新性开发，始终是用户的关注焦点。Andware始终站在同行业前沿，目前已参与众多的移动开发项目，覆盖图像处理、游戏、企业应用、二维码、办公、GIS等众多领域，通过众多移动项目的开发安盾软件已积累了丰富的经验，在技术领域更是得到了千锤百炼，在APP的研发和创新性上都有了长远的进步。</p></div>
-<div class="two"><p><img src="img/web.png" alt="img" /></p>
-<p class="text12"><span class="text13">02.</span>WEB网站开发</p>
-<p class="text15">Andware 2011年成立之初，一直致力于网站设计工作。公司员工悉心与客户沟通交流，倾听客户心之所想、心之所愿，并尽一切努力帮助客户将想法变成切实可见的平台，所设计网站风格新颖独特、LOGO识别度高、页面美观大方、色彩搭配匠心独运、细节处理细腻周到。十余年，公司积累了近2万名新老客户，赢得了骄人的口碑，一直处于同行业领跑者地位。</p></div>
-<div class="three"><p><img src="img/win.png" alt="img" /></p>
-<p class="text12"><span class="text13">03.</span>软件定制开发</p>
-<p class="text15">Andware以敏锐的市场洞察力和领导的高瞻远瞩，一直致力于软件定制开发业务，并以过硬的技术和良好的服务深得客户的信赖和好评，始终走在同行业的前列。我们服务范围广泛，涉及社区药品管理、现货自动化交易、政府企业办公等多个方面。在接下来的工作中，Andware依然会将软件定制开发作为主要核心业务，强化技术，与客户密切沟通，以自身最大力量帮助客户达到所期望之业务目标。</p></div><div class="clear"></div>
-<hr width="950" size="3" color="#e1e2e4" /><div class="hi1"></div>
-<div class="pl"><a target="_blank" href=""><img src="img/16.png" alt="img" /></a></div>
-<div class="pl"><a target="_blank" href=""><img src="img/17.png" alt="img" /></a></div>
-<div class="pl"><a target="_blank" href=""><img src="img/18.png" alt="img" /></a></div>
-<div class="pl"><a target="_blank" href=""><img src="img/19.png" alt="img" /></a></div>
-<div class="pl1"><a target="_blank" href=""><img src="img/20.png" alt="img" /></a></div>
-
-</div><div class="clear"></div>
-<div class="footer">
-  
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- START EXTRA CONTENT -->
+        <!-- END EXTRA CONTENT -->
+    </div>
 </div>
+<!-- END PRIMARY -->
 
+<!-- START COPYRIGHT -->
+<div id="copyright">
+    <div class="inner group">
+        <div class="left">
+            <p><strong>© 2014, CHINAZ.COM, Inc.All Rights Reserved. 站长统计
+            </strong></p>
+        </div>
+        <div class="right">
+            <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" style="float: right;">
 
-
-</div></div>
-<div class="foot">&copy; 2013 | Andware
-
-
+                <a class="bds_qzone"></a>
+                <a class="bds_tsina"></a>
+                <a class="bds_tqq"></a>
+                <a class="bds_renren"></a>
+                <span class="bds_more"></span>
+                <a class="shareCount"></a>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- END COPYRIGHT -->
 </div>
+<!-- END WRAPPER -->
+</div>
+<!-- END BG SHADOW -->
+
+<script type="text/javascript" src="js/jquery.custom.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
+
 </body>
+<!-- END BODY -->
 </html>
